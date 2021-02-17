@@ -125,9 +125,9 @@ body {
   cursor: pointer;
 }
 
-button.active {
-  background: #585858;
-  color: whitesmoke;
+.size button:hover {
+  background-color: darkgray;
+  color: white;
 }
 
 .purchase {

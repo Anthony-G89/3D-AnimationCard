@@ -1,6 +1,7 @@
-// movement for animation to happen 
+// Movement for animation to happen 
 const card = document.querySelector(".card");
 const container = document.querySelector(".container");
+
 // Animating the other items
 const title = document.querySelector(".title");
 const sneaker = document.querySelector(".sneaker img");
@@ -19,7 +20,7 @@ container.addEventListener("mousemove", (e) => {
 container.addEventListener("mouseenter", e => {
     card.style.transition = "none";
     title.style.transform = "translateZ(100px)";
-    sneaker.style.transform = "translateZ(115px) rotateZ(-45deg)";
+    sneaker.style.transform = "translateZ(115px) rotateZ(-30deg)";
     description.style.transform = "translateZ(130px)";
     size.style.transform = "translateZ(145px)";
     purchase.style.transform = "translateZ(155px)";
@@ -38,7 +39,5 @@ container.addEventListener("mouseleave", e => {
     purchase.style.transform = "translateZ(0px)";
 });
 
-
-// popout item 
 
 
