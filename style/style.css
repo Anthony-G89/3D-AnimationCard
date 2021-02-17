@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,20 +17,141 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .container {
-  background-color: lightblue;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card {
   min-height: 80vh;
   width: 35rem;
-  background-color: lightcoral;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 0 5rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
-.img {
-  width: 20%;
+.sneaker img {
+  width: 20rem;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background: white;
+  background: radial-gradient(circle, white 24%, #bcbcbd 51%, white 83%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.size button {
+  padding: 0.3rem 40px;
+  border-radius: 10px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 5px 10px;
+          box-shadow: 0px 5px 10px;
+  color: #585858;
+  cursor: pointer;
+}
+
+button.active {
+  background: #585858;
+  color: whitesmoke;
+}
+
+.purchase {
+  margin-top: 4rem;
+  -webkit-transition: all 0.75s ease-out;
+  transition: all 0.75s ease-out;
+}
+
+.purchase button {
+  width: 100%;
+  padding: .7rem;
+  border: none;
+  background-color: lightcoral;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+}
+
+.purchase button:hover {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */
